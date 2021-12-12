@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/text_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="@string/btn_sign_in_text"
+        android:textAllCaps="true"
+        android:textSize="@dimen/text_size_large" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_title"
+        android:layout_margin="30dp">
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/firstname_text_input"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/firstname_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:inputType="text"
+                android:hint="@string/txt_name" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/mobile_no_text_input"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/firstname_text_input">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/mobile_no_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:maxLength="10"
+                android:hint="@string/txt_mobile_no" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <Button
+            android:id="@+id/btn_sign_in"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mobile_no_text_input"
+            android:padding="10dp"
+            android:text="@string/btn_sign_in_text"
+            android:layout_marginTop="50dp"
+            android:textSize="@dimen/text_size_medium" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

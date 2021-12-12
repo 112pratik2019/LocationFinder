@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.DashboardActivity">
+
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragment_container_view_tag"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_above="@+id/parentRelative" />
+
+    <RelativeLayout
+        android:id="@+id/parentRelative"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="@color/purple_500"
+        android:layout_alignParentBottom="true">
+
+    <TextView
+        android:id="@+id/tv_current_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Location"
+        android:textSize="18sp"
+        android:textColor="@color/white"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
